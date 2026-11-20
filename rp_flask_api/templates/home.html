@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personas - API REST</title>
+</head>
+<body>
+    <h1>Personas</h1>
+    <p>Registros almacenados en SQLite.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Última actualización</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for person in people %}
+                <tr>
+                    <td>{{ person.lname }}</td>
+                    <td>{{ person.fname }}</td>
+                    <td>{{ person.timestamp }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">Todavía no hay personas registradas.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="/api/ui">Abrir documentación de la API</a></p>
+</body>
+</html>
