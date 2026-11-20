@@ -1,5 +1,11 @@
 # Python REST APIs With Flask, Connexion, and SQLAlchemy – Part 1
 
+## Entrega de API REST con SQLite
+
+Este proyecto replica el laboratorio de la Unidad 4: API REST en Python con Flask,
+Connexion, SQLAlchemy y Marshmallow. Incluye CRUD de personas, persistencia SQLite
+y documentación interactiva con Swagger.
+
 This repository holds the code for part one of the Real Python [Python REST APIs With Flask, Connexion, and SQLAlchemy](https://realpython.com/flask-connexion-rest-api) tutorial series.
 The `rp_flask_api` example persists people in the SQLite database `rp_flask_api/people.db`; the database and sample people are initialized automatically when the app starts.
 
